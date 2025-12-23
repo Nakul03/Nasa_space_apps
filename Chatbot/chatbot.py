@@ -4,7 +4,7 @@ import google.generativeai as genai
 # chatbot.py
 import google.generativeai as genai
 
-API_KEY = "AIzaSyDwiOMeuR7aVmgURFgrWi8Qy49VFV5GhgI"
+API_KEY = ""; // Add your own API key
 
 genai.configure(api_key=API_KEY)
 
@@ -40,3 +40,4 @@ chat_session = model.start_chat(history=[])
 def get_response(user_input):
     response = chat_session.send_message(user_input)
     return response.text
+
