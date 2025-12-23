@@ -48,7 +48,7 @@ def index():
 def plume_alert():
     data = request.json
     city_name = data.get("city")
-    api_key = 'acd476291ae29843ed1b64695aebaecc'  # Default API key for OpenWeatherMap
+    api_key = ''  # Default API key for OpenWeatherMap take and add 
 
     latitude, longitude = get_coordinates(city_name, api_key)
     if latitude is None or longitude is None:
@@ -62,3 +62,4 @@ def plume_alert():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
